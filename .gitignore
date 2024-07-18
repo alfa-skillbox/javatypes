@@ -68,3 +68,5 @@ generated/
 .asciidoctorconfig
 docker/data/
 #### GENERATED DO NOT EDIT USE gitignore{} in gradle config instead ###
+/javatypes.iml
+*.iml
