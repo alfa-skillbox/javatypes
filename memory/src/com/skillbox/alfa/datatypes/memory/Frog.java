@@ -16,10 +16,8 @@ class Frog {
     }
 
     public void moveUp(int offset) {
-        int resultOffset = 0;
         if (offset > 0) {
-            resultOffset = offset;
+            yPosition = yPosition - offset;
         }
-        yPosition = resultOffset;
     }
 }

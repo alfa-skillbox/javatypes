@@ -1,27 +1,24 @@
 package com.skillbox.alfa.datatypes.arrays;
 
-import java.util.Arrays;
-
 public class WorkingWithArrays {
     public static void main(String[] args) {
-
-        int[] intsArray = new int[5];
-        intsArray[1] = 10;
-        int a = 1;
-        int b = 2;
-        intsArray[a + b] = a + b;
-
-        int n = intsArray[b + a] + intsArray[b - a];
-        System.out.println("Значение n: " + n);
-
-
-        System.out.println("Содержимое массива intsArray: " + Arrays.toString(intsArray));
-
-        Frog[] frogsArray = new Frog[25];
-        for (int i = 0; i < frogsArray.length; i++) {
-            frogsArray[i] = new Frog();
-            frogsArray[i].xPosition = i + 2;
-            System.out.println("Лягушка с индексом " + i + " имеет позицию " + frogsArray[i].xPosition);
+        // входной массив данных
+        int[] inputArray = new int[]{5, 6, 7, 8, 9, 12, 23, 11, 4, 2, 18, 32, 45, 34, 101, 7, 9, 10};
+        int threshold = 3; // пороговое значение
+        boolean notValid = false; // признак нашли или нет значение меньше порога
+        int notValidIndex = -1; // здесь будет храниться индекс элемента со значением ниже порога
+        for (int i = 0; i < inputArray.length; i++) {
+            if (inputArray[i] < threshold) {
+                notValid = true;
+                notValidIndex = i;
+            }
+        }
+        if (notValid) {
+            System.out.println("В массиве inputArray длиной: " + inputArray.length
+                    + " встречается элемент меньше threshold: " + threshold + ", он имеет позицию " + (notValidIndex + 1));
+        } else {
+            System.out.println("В массиве inputArray длиной: " + inputArray.length
+                    + " нет элемента меньше threshold: " + threshold);
         }
     }
 }

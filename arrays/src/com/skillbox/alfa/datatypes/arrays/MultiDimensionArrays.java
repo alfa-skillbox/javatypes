@@ -5,20 +5,20 @@ import java.util.Arrays;
 public class MultiDimensionArrays {
     public static void main(String[] args) {
         {
-            int[][] matrix = new int[5][4];
-            matrix[2][2] = 5;
-            System.out.println("Содержимое массива intsArray: " + Arrays.toString(matrix));
-            for (int i = 0; i < matrix.length; i++) {
-                System.out.println("В переменной с индексом: " + i + " содержится: " + Arrays.toString(matrix[i]));
+            int[][] intMatrix = new int[5][4];
+            intMatrix[2][2] = 5;
+            System.out.println("Содержимое массива intMatrix: " + Arrays.toString(intMatrix));
+            for (int i = 0; i < intMatrix.length; i++) {
+                System.out.println("В переменной с индексом: " + i + " содержится: " + Arrays.toString(intMatrix[i]));
             }
         }
 
         {
-            Frog[][] frogsArray = new Frog[4][3];
-            frogsArray[3][2] = new Frog();
-            System.out.println("Содержимое массива frogsArray: " + Arrays.toString(frogsArray));
-            for (int i = 0; i < frogsArray.length; i++) {
-                System.out.println("В переменной с индексом: " + i + " содержится: " + Arrays.toString(frogsArray[i]));
+            A[][] objectMatrix = new A[4][3];
+            objectMatrix[3][2] = new A();
+            System.out.println("Содержимое массива objectMatrix: " + Arrays.toString(objectMatrix));
+            for (int i = 0; i < objectMatrix.length; i++) {
+                System.out.println("В переменной с индексом: " + i + " содержится: " + Arrays.toString(objectMatrix[i]));
             }
         }
 
@@ -26,7 +26,8 @@ public class MultiDimensionArrays {
             int[][] stepDimensionsArray = new int[][] {{1, 2, 3}, {4, 5}, {6}};
             System.out.println("Содержимое массива stepDimensionsArray: " + Arrays.toString(stepDimensionsArray));
             for (int i = 0; i < stepDimensionsArray.length; i++) {
-                System.out.println("В переменной с индексом: " + i + " содержится: " + Arrays.toString(stepDimensionsArray[i]));
+                System.out.println("В переменной с индексом: " + i + " содержится массив " + stepDimensionsArray[i] +
+                        " : " + Arrays.toString(stepDimensionsArray[i]));
             }
         }
     }
