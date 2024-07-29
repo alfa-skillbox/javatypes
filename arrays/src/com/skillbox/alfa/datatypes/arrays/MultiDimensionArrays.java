@@ -22,13 +22,13 @@ public class MultiDimensionArrays {
             }
         }
 
-        {
-            int[][] stepDimensionsArray = new int[][] {{1, 2, 3}, {4, 5}, {6}};
-            System.out.println("Содержимое массива stepDimensionsArray: " + Arrays.toString(stepDimensionsArray));
-            for (int i = 0; i < stepDimensionsArray.length; i++) {
-                System.out.println("В переменной с индексом: " + i + " содержится массив " + stepDimensionsArray[i] +
-                        " : " + Arrays.toString(stepDimensionsArray[i]));
-            }
-        }
+//        {
+//            int[][] stepDimensionsArray = new int[][] {{1, 2, 3}, {4, 5}, {6}};
+//            System.out.println("Содержимое массива stepDimensionsArray: " + Arrays.toString(stepDimensionsArray));
+//            for (int i = 0; i < stepDimensionsArray.length; i++) {
+//                System.out.println("В переменной с индексом: " + i + " содержится массив " + stepDimensionsArray[i] +
+//                        " : " + Arrays.toString(stepDimensionsArray[i]));
+//            }
+//        }
     }
 }
