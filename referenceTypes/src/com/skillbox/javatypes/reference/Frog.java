@@ -1,24 +1,25 @@
 package com.skillbox.javatypes.reference;
 
 class Frog {
-    // поля класса отвечают за состояние объекта
-    public int xPosition;
-    public int yPosition;
-    public boolean isAlive = true;
+    // ------------------------ Состояние объекта описываются полями класса --------------
+    int xPosition; // положение на игровом поле по горизонтали
+    int yPosition; // положение на игровом поле по вертикали
+    boolean isAlive = true; // признак жива или не жива
 
-    // методы класса отвечают за взаимодействие всей программы с этим объектом
-    public void moveLeft(int offset) {
-        int currentPosition = xPosition;
+    // ------------------------ Действия описываются методами класса --------------
+    // offset - количество шагов
+    void moveLeft(int offset) {
+        int currentPosition = xPosition; // текущая позиция лягушки на поле
         if (offset > 0) {
-            xPosition = currentPosition - offset;
+            xPosition = currentPosition - offset; // новая позиция лягушки на поле запоминается
         }
     }
 
-    public boolean isAlive() {
+    boolean isAlive() {
         return isAlive;
     }
 
-    public void moveUp(int offset) {
+    void moveUp(int offset) {
         if (offset > 0) {
             yPosition = yPosition - offset;
         }
