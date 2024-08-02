@@ -2,6 +2,7 @@ package com.skillbox.javatypes.reference;
 
 public class Step4_WorkingWithReferenceVariables {
     public static void main(String[] args) {
+        // ПРИМЕР 1 - присвоение переменных одного ссылочного типа друг другу
         System.out.println("Создание frog1 и frog2");
         Frog frog1 = new Frog(); // Зеленая лягушка
         Frog frog2 = new Frog(); // Красная лягушка
@@ -12,6 +13,7 @@ public class Step4_WorkingWithReferenceVariables {
         System.out.println("Бывшая Зеленая frog1: " + frog1);
         System.out.println("Красная frog2: " + frog2);
 
+        // ПРИМЕР 2 - присвоение переменных одного ссылочного типа друг другу
 //        Frog frog3 = null;
 //        Frog frog4 = new Frog();
 //        System.out.println("Создание frog3 и frog4");
