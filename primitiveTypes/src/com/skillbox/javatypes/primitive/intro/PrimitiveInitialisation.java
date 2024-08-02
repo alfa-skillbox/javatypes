@@ -5,15 +5,16 @@ public class PrimitiveInitialisation {
     public static void main(String[] args) {
 
         // ПРИМЕР НЕ проинициализированной примитивной переменной
-        int notInitializedVariable;
+        int someVariable;
         // не скомпилируется
-//        System.out.println("Значение примитивной переменной notInitializedVariable = " + notInitializedVariable);
+//        System.out.println("Значение примитивной переменной someVariable = " + someVariable);
 
-
+        // Инициализация переменной – это когда ей первый раз присваивается значение
         // ПРИМЕР инициализации при объявлении
         char ch = 'T';
         System.out.println("Инициализация при объявлении. Значение переменной ch = " + ch + "\n\n");
-
+        ch = 'A'; // положить в ch новое значение
+        char ch2 = ch; // достать из ch значение
 
         // ПРИМЕР отложенной инициализации
         System.out.println("Объявляем переменную: double d;");
