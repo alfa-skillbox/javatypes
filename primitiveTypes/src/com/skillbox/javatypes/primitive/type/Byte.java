@@ -7,10 +7,7 @@ public class Byte {
         byte b2 = 127; // максимальное значение диапазона -128..127
 
         // не скомпилируется
-//        byte b3 = b1 + b2;
-        // не скомпилируется
-//        short s1 = b1 + b2;
-        int i = b1 + b2;
-        System.out.println("Значение переменной i: " + i);
+//        byte i = b1 + b2;
+//        System.out.println("Значение переменной i: " + i);
     }
 }
