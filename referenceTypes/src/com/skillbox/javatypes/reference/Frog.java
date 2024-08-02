@@ -7,6 +7,7 @@ class Frog {
     boolean isAlive = true; // признак жива или не жива
 
     // ------------------------ Действия описываются методами класса --------------
+    // метод 1
     // offset - количество шагов
     void moveLeft(int offset) {
         int currentPosition = xPosition; // текущая позиция лягушки на поле
@@ -15,10 +16,12 @@ class Frog {
         }
     }
 
+    // метод 2
     boolean isAlive() {
         return isAlive;
     }
 
+    // метод 3
     void moveUp(int offset) {
         if (offset > 0) {
             yPosition = yPosition - offset;
