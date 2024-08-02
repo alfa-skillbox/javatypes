@@ -5,9 +5,10 @@ public class Boolean {
 
     public static void main(String[] args) {
 
+        boolean b;
         int i = 7;
         double d = 10.3;
-        boolean b = i > d;
+        b = i > d;
 
         // Пример использования boolean с оператором if-else
         if (b) {
