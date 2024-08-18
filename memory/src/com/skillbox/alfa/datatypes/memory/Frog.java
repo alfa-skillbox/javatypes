@@ -6,9 +6,13 @@ class Frog {
     public boolean isAlive = true;
 
     public void moveLeft(int offset) {
+        // текущая позиция лягушки на поле
+        int currentPosition = xPosition;
         if (offset > 0) {
-            xPosition = xPosition - offset; // смещает лягущку влево от текущего положения на offset
+            // смещаем лягушку влево на offset
+            xPosition = currentPosition - offset;
         }
+
     }
 
     public boolean isAlive() {
